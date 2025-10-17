@@ -13,11 +13,17 @@
 
         <div id="leftdiv">
             <div id="logo">logo</div>
+
+            <div id="photocredit">
+                Photo by <a href="https://unsplash.com/@christopherstites?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christopher Stites</a> on <a href="https://unsplash.com/photos/tall-redwood-trees-in-a-misty-forest-leeHbTl9qqI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+            
+      
         </div>
 
         <div id="rightdiv">
 
-            <div id="text">
+            <div id="texttop">
                 
                 This is not an online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
                 Sign up <em>now</em> to get started.<br><br>               
@@ -25,11 +31,63 @@
                 You <em>know</em> you want to.
             </div>
     
-            <form action="" method="get">
+            <form id="signup" action="" method="get">
                 <h3>Let's do this!</h3>
 
+                             
+                                
+                <div class="multirow">
+
+                    <div class="row">
+                    <div class="leftfields">
+                        <label for="firstname" data-help="Enter your first name">FIRST NAME</label><br>
+                        <input id="firstname" placeholder="" name="firstname" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
+                    </div>
+                    <div class="rightfields">
+                        <label for="lastname" data-help="Enter your last name">LAST NAME</label><br>
+                        <input id="lastname" placeholder="" name="lastname" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
+                    </div>
+                    </div><!--class="row"-->
+                    
+                    
+                    <div class="row">
+                    <div class="leftfields">
+                        <label for="email" data-help="Format email@email.com">EMAIL</label><br>
+                        <input id="email" placeholder="" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required>
+                    </div>
+                    <div class="rightfields">
+                        <label for="phone" data-help="Format 000-000-0000">PHONE NUMBER</label><br>
+                        <input id="phone" placeholder="" name="phone" type="tel" value="" size="30" maxlength="100" required>
+                    </div>
+                    </div><!--class="row"-->
+
+
+                    <div class="row">
+                        <div class="leftfields">
+                            <label for="password" data-help="Create a tough password">PASSWORD</label><br>
+                            <input id="password" placeholder="" name="password" type="password" value="" size="30" maxlength="100" required>
+                        </div>
+                        <div class="rightfields">
+                            <label for="pwconfirm" data-help="Type password again">CONFIRM PASSWORD</label><br>
+                            <input id="pwconfirm" placeholder="" name="pwconfirm" type="password" value="" size="30" maxlength="100" required>
+                            
+                        </div>
+                        </div><!--class="row"-->
+    
+                </div>
 
             </form>
+
+            <div id="textbottom">
+                
+
+                <button type="submit" form="signup">Create Account</button>
+                <br><br>
+                Already have an account?  <a href="#">Log in</a>
+            </div>
+    
+
+            
 
         </div>
 
