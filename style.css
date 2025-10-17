@@ -5,12 +5,16 @@ body{
 }
 
 
+@font-face {
+    font-family: KaushanScript;
+    src: url(KaushanScript-Regular.woff);
+}
 
-
-
+  
 #leftdiv{
     display:flex;
     flex-direction: column;
+    ;
     flex: 1;
     background-image:url("christopher-stites-leeHbTl9qqI-unsplash.jpg");
     height:1100px;
@@ -22,10 +26,13 @@ body{
     justify-content: center;
     align-items: center;
     position:relative;
+    color:white;
+    font-size: 90px;
+    font-family: KaushanScript;
     top:24%;
     height:20%;
     width:100%;
-    background-color: rgb(83, 216, 233);
+    background-color: rgba(2, 2, 2, 0.65);
 }
 
 
