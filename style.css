@@ -71,6 +71,7 @@ form{
 
 input{
     border: 1px solid #E5E7EB;
+    
 }
 
 
@@ -80,7 +81,8 @@ input#pwconfirm:invalid{
 }
 
 input:focus{
-    border: 1px solid rgba(0, 0, 255, 0.1);
+    outline: none;/*Need this or else the border will stay blue and thick on Chrome and Opera*/
+    border: 1px solid blue;
     box-shadow: 4px 8px 6px #63626243;
 }
 
